@@ -33,6 +33,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
+            --platform linux/arm64 \
             --build-arg APP_VERSION=${GITHUB_SHA::7} \
             -t $ECR_REPOSITORY:${{ github.sha }} .
 
