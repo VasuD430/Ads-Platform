@@ -10,3 +10,4 @@ venv/
 *.tfstate
 *.tfstate.backup
 /aws/
+terraform.tfvars
